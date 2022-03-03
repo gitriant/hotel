@@ -29,7 +29,69 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-
+  <style>
+    .carousel-inner  {
+      width:100%;
+      height:70vh;
+    }
+        .carousel  {
+      width:100%;
+      height:70vh;
+    }
+    .w-100 {
+      width: 100% !important;
+      height: 70vh;
+    }
+    .carousel-item {
+        width: 100%;
+        height: 100%;
+    
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    
+        background-position: center;
+    }
+    .img-fasilitas{
+      padding: 0;
+    }
+    .img-fasilitas:hover {
+    -webkit-box-shadow: 0 0 6px 5px #ddd;
+    box-shadow: 0 0 6px 5px #ddd;
+    border-radius: 6px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    border: 1px solid #dee2e6;
+}
+    .carousel-control-prev-icon{margin-top: 50px;}
+    .carousel-control-next-icon{margin-top: 50px;
+    }
+    .carousel-control-next-icon{
+      width: 50px;
+      height: 50px;
+      padding: 8px;
+      border-radius: 50%;
+background-color: black;
+opacity: 0.8;
+    }
+    .carousel-control-prev-icon{
+      width: 50px;
+      height: 50px;
+      padding: 8px;
+      border-radius: 50%;
+background-color: black;
+opacity: 0.8;
+    }
+      @media only screen and (min-device-width : 600px) {
+        .pesan{margin-top: 10px;
+          
+        }
+    
+        
+    }
+    </style>
 </head>
 
 <body>
@@ -66,53 +128,45 @@
     
       </header><!-- End Header -->
 
-      <div class="card" style="height: 400px;">
-        <div class="card-body">
-
-          <!-- Slides with indicators -->
-          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <!-- <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div> -->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="assets/img/hotel-1.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="assets/img/hotel-2.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="assets/img/hotel-3.jpg" class="d-block w-100" alt="...">
-              </div>
-            </div>
-
-            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button> -->
-
-          </div><!-- End Slides with indicators -->
-
-
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/hotel-1.jpg" class="w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/hotel-2.jpg" class="w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/hotel-3.jpg" class="w-100" alt="...">
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
       </div>
 
 
 
-
-      <div class="row justify-content-between" style="margin: 30px;">
+      <div class="row justify-content-between" style="margin: 30px; ">
         <p class="text-start h1">Fasilitas</p>
 
-  <img src=".../../assets/img/hotel-1.jpg" class=" img-fluid" style="width: 30%;"  alt="Responsive image">
-  <img src=".../../assets/img/hotel-2.jpg" class="img-fluid" style="width: 30%;"alt="Responsive image">
-  <img src=".../../assets/img/hotel-3.jpg" class="img-fluid" style="width: 30%;"alt="Responsive image">
-</div>
+        <img src=".../../assets/img/hotel-1.jpg" class="img-fasilitas " style="width: 30%; "alt="Responsive image" >
+        
+        <img src=".../../assets/img/hotel-2.jpg" class="img-fasilitas" style="width: 30%; "alt="Responsive image">
+        <img src=".../../assets/img/hotel-3.jpg" class="img-fasilitas" style="width: 30%;"alt="Responsive image">
+      </div>
 
 
 
